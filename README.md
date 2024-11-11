@@ -14,3 +14,5 @@ different from Twitter's original version.
 This implementation seems to work, but it should not be considered
 production-ready. Actually, this is the code that illustrates
 my note about lock-free programming: <https://lu.sagebl.eu/notes/implementing-lock-free-snowflake-id-generator/>
+
+_**Warning**: This implementation assumes that we never reach the max sequence number within 1 millisecond._
